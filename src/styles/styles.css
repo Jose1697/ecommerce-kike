@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+}
+* body {
+  background-color: #111;
+}
+
+.container__header {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100vw;
+  height: 50px;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #222;
+  color: white;
+  font-family: "Alfa Slab One", cursive;
+}
+
+.container__header__title--text {
+  cursor: default;
+}
+
+.container__header__menu {
+  padding-left: 5px;
+}
+
+.container__header__cartDiv {
+  display: flex;
+  flex-flow: row;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 50px;
+  padding-right: 5px;
+}
+
+.container__header__cartDiv--count {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 100%;
+  cursor: default;
+  background-color: red;
+}
+
+.container__header__cartDiv--list {
+  display: none;
+  min-width: 100px;
+  right: 0;
+  top: 50px;
+  position: absolute;
+  z-index: 999;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 20px;
+  background-color: rgba(3, 3, 3, 0.9);
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+}
+.container__header__cartDiv--list ul {
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.container__header__cartDiv--list img {
+  max-width: 100px;
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+}
+.container .container__content {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+  min-width: 100vw;
+  background-color: #111;
+}
+.container .container__content .container__content__title {
+  height: 20vh;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+.container .container__content .container__content__listBurgers {
+  display: flex;
+  flex-flow: row;
+  min-width: 100vw;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+.container .container__content .container__content__burgers {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 10px;
+  width: 200px;
+  min-height: 200px;
+  list-style: none;
+  background-color: #333;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 2px #000;
+  transition: 0.4s;
+}
+.container .container__content .container__content__burgers:hover {
+  transform: translateY(20px);
+}
+.container .container__content .container__content__burgers .container__content__burgers--image {
+  margin-top: -50px;
+  max-width: 250px;
+  max-height: 150px;
+}
+.container .container__content .container__content__burgers .container__content__burgers--nombre, .container .container__content .container__content__burgers .container__content__burgers--precio {
+  color: white;
+}
+.container .container__content .container__content__burgers .container__content__burgers--nombre {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 1.4rem;
+}
+.container .container__content .container__content__burgers .container__content__burgers--precio {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+}
+.container .container__footer {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.container__content__burgers--btnAdd {
+  cursor: pointer;
+  color: white;
+  border: 0;
+  background-color: #ffd900;
+  text-shadow: 1px 0px #111;
+  font-family: "Alfa Slab One", cursive;
+  font-size: 1.4rem;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  padding: 0 10px 0 10px;
+}
+
+.container__content__burgers--btnDel {
+  cursor: pointer;
+  color: white;
+  border: 0;
+  background-color: red;
+  text-shadow: 1px 0px #111;
+  font-family: "Alfa Slab One", cursive;
+  font-size: 1.4rem;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  padding: 0 10px 0 10px;
+  margin-right: 10px;
+}
+
+.container__content__burgers--btnClose {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+  cursor: pointer;
+  font-family: "Alfa Slab One", cursive;
+  color: white;
+  background-color: transparent;
+  font-size: 1.2rem;
+}
+
+.container__header__cartDiv--btnCart {
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url("../images/cart.png");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.container__header__menu--button {
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url("../images/menu.png");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0;
+  width: 20px;
+  height: 20px;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,63 @@
+.container
+    display: flex
+    flex-flow: column
+    align-content: center
+    align-items: center
+    justify-content: space-between
+    height: 100vh
+
+    .container__content
+        display: flex
+        flex-flow: column wrap
+        align-content: center
+        align-items: center
+        justify-content: space-around        
+        min-width: 100vw
+        background-color: $dark01
+
+        .container__content__title
+            height: 20vh
+            font-family: 'Montserrat', sans-serif
+            color: $white
+
+        .container__content__listBurgers
+            display: flex
+            flex-flow: row
+            min-width: 100vw
+            align-content: center
+            align-items: center
+            justify-content: space-around
+        .container__content__burgers
+            display: flex
+            flex-flow: column wrap
+            align-content: center
+            align-items: center
+            justify-content: space-between
+            margin: 0
+            padding: 10px
+            width: 200px
+            min-height: 200px
+            list-style: none
+            background-color: $dark03
+            border-radius: 20px
+            box-shadow: 0 0 10px 02px #000
+            transition: 0.4s
+            &:hover
+                transform: translateY(20px)
+            .container__content__burgers--image
+                margin-top: -50px
+                max-width: 250px
+                max-height: 150px
+            .container__content__burgers--nombre, .container__content__burgers--precio
+                color: $white
+
+            .container__content__burgers--nombre
+                font-family: 'Alfa Slab One', cursive
+                font-size: 01.4rem
+            .container__content__burgers--precio
+                font-family: 'Montserrat', sans-serif
+                font-size: 01.4rem
+    .container__footer
+        font-family: 'Montserrat', sans-serif
+        color: $white
+        font-size: 0.8rem

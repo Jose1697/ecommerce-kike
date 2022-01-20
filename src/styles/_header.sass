@@ -1,0 +1,59 @@
+.container__header
+    display: flex
+    flex-flow: row wrap
+    width: 100vw
+    height: 50px
+    align-content: center
+    align-items: center
+    justify-content: space-between
+    background-color: $dark02
+    color: $white
+    font-family: 'Alfa Slab One', cursive
+
+.container__header__title--text
+    cursor: default
+
+.container__header__menu
+    padding-left: 05px
+
+.container__header__cartDiv
+    display: flex
+    flex-flow: row
+    align-content: center
+    align-items: center
+    justify-content: space-between
+    min-width: 50px
+    padding-right: 05px
+
+.container__header__cartDiv--count
+    width: 20px
+    height: 20px
+    text-align: center
+    border-radius: 100%
+    cursor: default
+    background-color: red 
+
+.container__header__cartDiv--list
+    display: none
+    min-width: 100px
+    right: 0
+    top: 50px
+    position: absolute
+    z-index: 999
+    flex-flow: column
+    justify-content: center
+    align-items: center
+    align-content: center
+    padding: 20px   
+    background-color: rgba(3, 3, 3, 0.9)
+    box-shadow: 0 0 05px 02px rgba(0, 0, 0, 0.5)
+    ul
+        list-style: none
+        display: flex
+        flex-flow: column
+        align-content: center
+        align-items: center
+        padding: 0
+        margin: 0
+    img
+        max-width: 100px
